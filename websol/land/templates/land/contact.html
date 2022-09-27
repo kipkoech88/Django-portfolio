@@ -1,0 +1,12 @@
+{% extends 'land/base.html' %} 
+{% load static %} 
+
+{% block body_block %}  
+<form action="" method="post" id="form"> 
+    {% csrf_token %} 
+    <input type="text" placeholder="First name"> 
+    <input type="email" placeholder="Email Adress">
+    <input type="submit">
+
+</form>
+{% endblock %}

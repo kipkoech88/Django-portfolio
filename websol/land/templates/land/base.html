@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+
+{% load static %}
+
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>landing page</title>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+    <body>
+        <div class="dark">
+            <div class="div">
+                <div class="logo" id="nav">
+                    <a href="{% url 'index' %}">Web Solutions</a>
+                </div>
+                <div>
+                    <ul class="ul">
+                        <li><a href="{% url 'about' %}">About us</a> </li>
+                        <li><a href="{% url 'services' %}">Services</a> </li>
+                        <li> <a href="{% url 'contact' %}">Contact us</a> </li>
+                    </ul>
+                </div>
+
+            </div>
+            </div>
+            {% block body_block %}
+            {% endblock %}
+        <div class="dark" id="foot">
+            <div>
+                <address>
+                    Email:hoseakipkoech88@gmail.com
+                    Whatsapp: +254701766079
+                    LinkedIn: Hosea Kipngetich
+                </address>
+            </div>
+            <div>
+                <img src="C://Users//User//AppData//Local//Temp//Temp1_flexbox-images-449705.zip//images//social-icons.svg">
+            </div>
+            <footer>Copyrights@Hosea Travels 2022</footer>
+        </div>
+    </body>
+</html>
